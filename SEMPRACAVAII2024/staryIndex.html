@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcela Lašová | Cukrárska výroba</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="res/favicon/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+      <div class="container" style="max-width: 65%">
+        <div
+          id="navbarCollapse"
+          class="collapse navbar-collapse justify-content-between"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Domov</a>
+            </li>
+            <li class="nav-item">
+              <a href="lodne.html" class="nav-link">Lodne</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                >Udalosti</a
+              >
+              <div class="dropdown-menu">
+                <a href="svadba.html" class="dropdown-item">Svadba</a>
+                <a href="oslava.html" class="dropdown-item">Oslava</a>
+                <a href="kar.html" class="dropdown-item">Kar</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Ostatné</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="fotog.html" class="nav-link">Fotogaléria</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link"
+                ><i class="fas fa-sign-in"></i>Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="register.html" class="nav-link"
+                ><i class="fas fa-user-check"></i>Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- stred stránky s prechodom obrázkov a textom  -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="res/products/land1.jpg"
+            class="d-block w-100 custom-height"
+            alt="Slide 1"
+          />
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1><b>Profesionálnosť</b></h1>
+              <p>
+                Naše profesionálne pekári majú zlaté ruky, a vytvárajú kvalitné
+                torty, ktoré robia každú príležitosť nezabudnuteľnou.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Kontakt</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="res/products/land2.jpg"
+            class="d-block w-100 custom-height"
+            alt="Slide 2"
+          />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><b>Kreativita</b></h1>
+              <p>
+                V našej šikovnej pekárni sa kvalita stretáva s kreativitou, čo
+                nám umožňuje ponúknuť vám najlepšie torty na mieru pre vaše
+                špeciálne okamihy.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Fotogaléria</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="res/products/land3.jpg"
+            class="d-block w-100 custom-height"
+            alt="Slide 3"
+          />
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1><b>Kvalita</b></h1>
+              <p>
+                Naša kvalitná spoločnosť sa stará o detaily, aby sme vám
+                priniesli nezabudnuteľné sladké potešenie, ktoré si zaslúžite.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Fotogaléria</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" ariahidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Jednoduchý kontainer s privítaním-->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <h1>Vítajte v našej cukárni</h1>
+          <p>
+            Vitajte v našom sladkom kráľovstve, kde sa vytvárajú najlepšie
+            sladkosti pre Vaše najvýznačnejšie okamihy. Sme cukrárskou firmou s
+            dlhoročnou tradíciou a vášňou pre kvalitu.
+          </p>
+          <p>
+            U nás nie sú sladkosti len dobrota, sú to umelecké diela, ktoré si
+            zaslúžia byť súčasťou Vašich najlepších spomienok. Naše cukrárske
+            schopnosti spájame s láskou k detailom, aby boli naše torty a koláče
+            naozaj jedinečné.
+          </p>
+          <p>
+            Radi Vás zavedieme na sladkú cestu plnú chutí, radosti a
+            spokojnosti. Záleží nám na tom, aby ste si u nás užili nielen
+            dokonalú chuť, ale aj nezabudnuteľný zážitok.
+          </p>
+          <p>
+            Pripojte sa k nám a nechajte sa uniesť svetom sladkostí pani
+            Marcely. Sme tu pre Vás, aby sme Vám urobili deň sladší!
+          </p>
+          <p>S pozdravom, Pani Marcela a celý tím cukrárov</p>
+          <a href="lodne.html" class="btn btn-primary">Naše služby</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            src="res/fotogaleria/7.jpg"
+            alt="Cukrárenský dort"
+            class="img-fluid max-50"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- album s 3 fotkami-->
+    <div class="container my-5">
+      <!-- <h1 class="text-center mb-4">Torty</h1> -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="square-image">
+              <img
+                src="res/products/torta1.jpg"
+                class="img-fluid"
+                alt="Fotka 1"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Čokoládová indulgencia - pre milovníkov čokolády a krému,
+                neodolateľná lahôdka.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="square-image">
+              <img
+                src="res/products/torta2.jpg"
+                class="img-fluid"
+                alt="Fotka 2"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Torta s ovocím a smotanou - osviežujúci zážitok plný šťavnatého
+                ovocia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="square-image">
+              <img
+                src="res/products/torta3.jpg"
+                class="img-fluid"
+                alt="Fotka 3"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Torta s jahodami - svieža, lahodná a plná sladkej jahodovej
+                chuťovej explozie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script pre hover navmenu -->
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          navLinks.forEach((otherLink) => {
+            if (otherLink !== link) {
+              otherLink.style.transform = "scale(0.9)"; // Zmení veľkosť iných položiek
+              otherLink.style.filter = "brightness(0.7)"; // Ztmaví iné položky
+            }
+          });
+          link.style.transform = "scale(1.1)"; // Priblíži vybranú položku
+          link.style.filter = "brightness(1.2)"; // Zjasní vybranú položku
+        });
+
+        link.addEventListener("mouseout", () => {
+          navLinks.forEach((otherLink) => {
+            otherLink.style.transform = ""; // Vráti veľkosť iných položiek na normál
+            otherLink.style.filter = ""; // Vráti jas iných položiek na normál
+          });
+        });
+      });
+    </script>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container justify-content-center text-muted">
+        <p>&copy; 2023 Marcela Lašová | Juraj Krišťak</p>
+      </div>
+    </footer>
+    <!-- skript pre prechod v galérií -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

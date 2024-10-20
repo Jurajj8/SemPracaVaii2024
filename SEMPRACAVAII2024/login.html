@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcela Lašová | Cukrárska výroba</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="res/favicon/favicon.png" />
+
+    <!-- Login -->
+    <link href="signin.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <div class="container content-box">
+        <form>
+          <img
+            class="mb-4"
+            src="res/favicon/favicon.png"
+            alt=""
+            width="150"
+            height="150"
+          />
+          <h1 class="h3 mb-3 fw-normal">Prihlásenie</h1>
+
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mt-1">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Heslo</label>
+          </div>
+
+          <div class="form-check d-flex mt-2 mb-2">
+            <input type="checkbox" class="form-check-input" id="remember-me" />
+            <label class="form-check-label checkbox-label" for="remember-me"
+              >Zapamätať si ma</label
+            >
+          </div>
+
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            Prihlásiť
+          </button>
+          <button
+            class="w-100 btn btn-lg"
+            type="button"
+            onclick="window.location.href = 'index.html';"
+          >
+            Späť na domovskú stránku
+          </button>
+          <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
